@@ -1,18 +1,19 @@
 #include <stdio.h>
+
 /**
- *main - program entry point.
- *Return:0 no error, non zero if error.
- **/
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char i;
-char j;
+	char alx[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-for (i = 'a'; i <= 'z'; i++)
-{
-putchar(i);
-for (j = 'A <= 'Z'; j++)
-}
-putchar('\n');
-return (0)
+	for (i = 0; i < 52; i++)
+	{
+		putchar(alx[i]);
+	}
+	putchar('\n');
+	return (0);
 }

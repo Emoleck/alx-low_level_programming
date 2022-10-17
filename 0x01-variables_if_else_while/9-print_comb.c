@@ -1,25 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+
 /**
- *main - program entry point
- *Return:0 if success, non zero if error.
+ * main- Write a program that prints all possible
+ * combinations of single-digit numbers
+ * Return: 0 (success)
  */
+
 int main(void)
 {
-int num;
+	int d;
 
-for(num = '0'; num <= '9'; num++)
-{
-putchar(num);
-if(num =='9')
-{
-break;
-}
-else
-{
-putchar(',');
-putchar('');
-}
-}
-putchar('\n');
-return (0);
+	for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }

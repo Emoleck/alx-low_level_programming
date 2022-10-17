@@ -1,14 +1,18 @@
 #include <stdio.h>
+
 /**
-*main - program entry point.
-*Return:0 if no errors, non zero if errors
-*/
+ * main - Prints reversed alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char i
+	int i;
 
-for(i ='z'; i >='a'; i--)
-putchar(i);
-putchar('\n');
-return (0);
+	for (i = 122; i > 96; i--)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+	return (0);
 }
